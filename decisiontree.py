@@ -13,7 +13,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn import tree
 from sklearn.tree import plot_tree
-
+import streamlit as st
 
 
 df=sns.load_dataset('iris')
