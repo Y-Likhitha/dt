@@ -1,4 +1,4 @@
 pandas
-sckit-learn
+scikit-learn
 numpy
 seaborn
