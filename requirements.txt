@@ -1,0 +1,4 @@
+pandas
+sckit-learn
+numpy
+seaborn
