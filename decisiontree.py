@@ -12,6 +12,8 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn import tree
+from sklearn.tree import plot_tree
+
 
 
 df=sns.load_dataset('iris')
