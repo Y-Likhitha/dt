@@ -36,10 +36,7 @@ op=df['species']
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(ip,op,random_state=20)
 
-from sklearn import tree
-plt.figure(figsize=(10,10))
-tree.plot_tree(model,filled=True)
-st.pyplot(fig)
+
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
@@ -47,6 +44,11 @@ model=DecisionTreeClassifier()
 model.fit(x_train,y_train)
 pred=model.predict(x_test)
 print(accuracy_score(y_test,pred))
+
+from sklearn import tree
+plt.figure(figsize=(10,10))
+tree.plot_tree(model,filled=True)
+st.pyplot(fig)
 
 from sklearn.model_selection import cross_val_score
 score=cross_val_score(model,x_train,y_train)
