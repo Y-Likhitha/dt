@@ -48,7 +48,7 @@ print(accuracy_score(y_test,pred))
 from sklearn import tree
 plt.figure(figsize=(10,10))
 tree.plot_tree(model,filled=True)
-st.pyplot(fig)
+
 
 from sklearn.model_selection import cross_val_score
 score=cross_val_score(model,x_train,y_train)
