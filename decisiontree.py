@@ -39,6 +39,7 @@ x_train,x_test,y_train,y_test=train_test_split(ip,op,random_state=20)
 from sklearn import tree
 plt.figure(figsize=(10,10))
 tree.plot_tree(model,filled=True)
+st.pyplot(fig)
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
